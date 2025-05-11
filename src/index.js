@@ -1,17 +1,16 @@
+// src/index.js
 import React from 'react';
-import ReactDOM from 'react-dom/client';
-import './index.css';
+import ReactDOM from 'react-dom/client'; // ✅ สำคัญ! ต้องเป็น react-dom/client
 import App from './App';
-import reportWebVitals from './reportWebVitals';
+import "font-awesome/css/font-awesome.min.css";
+import '@fontsource/kanit/400.css'; // normal
+import '@fontsource/kanit/700.css'; // bold
 
-const root = ReactDOM.createRoot(document.getElementById('root'));
+const rootElement = document.getElementById('root');
+const root = ReactDOM.createRoot(rootElement); // ✅ ใช้ createRoot แทน render
+
 root.render(
   <React.StrictMode>
     <App />
   </React.StrictMode>
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();

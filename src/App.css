@@ -1,38 +1,116 @@
-.App {
-  text-align: center;
+/* src/App.css */
+body,
+.btn,
+button {
+  font-family: 'Kanit', sans-serif;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+  max-width: 500px;
+  margin: 50px auto;
+  padding: 20px;
+  background: #fefefe;
+  border: 1px solid #ccc;
+  border-radius: 10px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+ul {
+  list-style: none;
+  padding: 0;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+input {
+  width: 100%;
+  padding: 8px;
+  margin: 5px 0 15px;
+}
+
+button {
+  padding: 10px;
+  width: 100%;
+  background: teal;
+  color: white;
+  border: none;
+  cursor: pointer;
+}
+
+.app_row {
+  justify-content: space-between;
+  width: 100%;
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.app_row_h2 {
+  margin-left: 10px;
+}
+
+.app_row_icon {
+  margin-right: 10px;
+}
+
+/* 
+.bd {
+  border: black 1px solid;
+} */
+
+.mg-5 {
+  margin: 5%;
+}
+
+.pd-2 {
+  padding: 2%;
+}
+
+.balance_flex_container {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 5px;
+  padding: 5px;
+}
+
+.balance_content_st {
+  height: 100px;
+  width: -webkit-fill-available;
+  padding: 8px 12px;
+  margin: 1.5%;
+  border-radius: 5px;
+}
+
+.income_st {
+  background-color: #2b832b;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+.expense_st {
+  background-color: #e50800;
+  color: white;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.total_st {
+  background-color: #bdb939;
+  color: white;
+}
+
+/* .btn{
+  font-family: 'Kanit';
+} */
+
+.add_trn_form {
+  display: inline-grid;
+  justify-items: flex-start;
+  width: 100%;
+}
+
+.add_trn_form_div {
+  width: 95%;
+}
+
+.add_trn_btn_add {
+  background-color: #5dbf5d;
+}
+
+.trn_list_li {
+  margin: 10px 0px 10px 0px !important;
 }
