@@ -34,6 +34,10 @@ button {
   cursor: pointer;
 }
 
+.bd-bottom {
+  border-bottom: 1px solid gray;
+}
+
 .app_row {
   justify-content: space-between;
   width: 100%;
